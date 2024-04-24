@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/login.css">
+    <title> CSS Login Screen Tutorial </title>
+     
+    <script>
+      function handleRegisterButtonClick(event) {
+          alert('You are successfully registered!');
+      }
+    </script>
+
+  </head>
+<body>
+  <body>
+    <nav class="navbar">
+        <div class="nav-right">
+          <li><a href="./login.html">Login</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            
+        </div>
+    </nav>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>REGISTER</h3>
+            <p>Please enter your credentials to login.</p>
+          </div>
+        </div>
+        <form action="connect.php" class="login-form" method="post">
+          <input type="text" placeholder="username" name="new-username"/>
+          <input type="email" placeholder="email" name="new-email"/>
+          <input type="password" placeholder="password" name="new-password"/>
+
+           Female <input type="radio" name="gender" value="female"/>
+           Male<input type="radio"  name="gender" value="male"/> 
+
+          <button onclick="handleRegisterButtonClick(event)">
+            <a href="./login.html" style="text-decoration: none;color: white;">Register</a>
+          </button>
+          <p class="message" style="color: rgb(50, 46, 46);font-size: 15px;">Not registered? <a href="./login.html">Login</a></p>
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>

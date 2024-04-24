@@ -1,0 +1,97 @@
+body {margin:0;}
+
+.navbar{
+  display: flex;
+  background-color:rgb(245, 146, 7);
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav-right{
+  text-align: right;
+  float:right;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  .nav-right li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .nav-right  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav-right li a:hover {
+    background-color: rgb(117, 75, 46);
+    color: white;
+  }
+
+  .nav-right .active {
+    background-color: rgb(128, 118, 111);
+  }
+
+  .section-5
+{
+    background-color: black;
+    display: grid; 
+    padding: 15px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(245, 146, 7);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(245, 146, 7);
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(117, 75, 46);
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: rgb(245, 146, 7);
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
